@@ -10,63 +10,63 @@
     <form action="#" method="POST">
         <fieldset>
             <legend>1. Personal Credentials</legend>
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" placeholder="Enter your name" required>
+            <label for="fullName">Full Name</label><br>
+            <input type="text" id="fullName" placeholder="Enter your name" required><br><br>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required><br><br>
 
-            <label for="mobileno">Mobile No.</label>
-            <input type="tel" id="mobileno" name="mobile number" placeholder="99999-99999">
+            <label for="mobileno">Mobile No.</label><br>
+            <input type="tel" id="mobileno" name="mobile number" placeholder="99999-99999"><br><br>
 
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
 
-            <label for="gender">Gender</label>
+            <label for="gender">Gender</label><br>
             <input type="radio" id="gendermale" name="gender" value="male">
             <label for="gendermale">Male</label>
             <input type="radio" id="genderfemale" name="gender" value="female">
             <label for="genderfemale">Female</label>
-        </fieldset>
+        </fieldset><br>
 
         <fieldset>
             <legend>2. Academic and Technical Domain</legend>
-            <label for="courseName">Degree Program</label>
+            <label for="courseName">Degree Program</label><br>
             <select id="courseName" name="courseName" required>
                 <option value="">-- Select Course --</option>
                 <option value="BTech-AI/ML">BTech CSE-(AI/ML)</option>
                 <option value="BTech-CSE">BTech Computer Science</option>
-            </select>
+            </select><br><br>
 
-            <label for="year of study">Current Year</label>
-            <input type="number" id="year of study" name="year of study" min="1" max="4" required>
+            <label for="year of study">Current Year</label><br>
+            <input type="number" id="year of study" name="year of study" min="1" max="4" required><br><br>
 
-            <label>Core Domains</label>
+            <label>Core Domains</label><br>
             <input type="checkbox" id="interests2" name="interests2" value="web">
             <label for="interests2">Web development</label>
             <input type="checkbox" id="interest" name="interest" value="ai">
-            <label for="interest">Artificial Intelligence</label>
+            <label for="interest">Artificial Intelligence</label><br><br>
 
-            <label for="github">Github Profile</label>
-            <input type="url" id="githubProfile" name="githubProfile" placeholder="https://github.com/armanattrey">
+            <label for="github">Github Profile</label><br>
+            <input type="url" id="githubProfile" name="githubProfile" placeholder="https://github.com/armanattrey"><br><br>
 
-            <label for="resumeFile">Upload Resume</label>
+            <label for="resumeFile">Upload Resume</label><br>
             <input type="file" id="resumeFile" name="resumeFile" accept=".pdf">
-        </fieldset>
+        </fieldset><br>
 
         <fieldset>
             <legend>3. Security and Location</legend>
-            <label for="accountPassword">Account Password</label>
-            <input type="password" id="accountPassword" name="accountPassword" required minlength="8">
+            <label for="accountPassword">Account Password</label><br>
+            <input type="password" id="accountPassword" name="accountPassword" required minlength="8"><br><br>
 
-            <label for="currentAddress">Current Address</label>
+            <label for="currentAddress">Current Address</label><br>
             <textarea id="currentAddress" name="currentAddress" rows="3" cols="40" maxlength="200" placeholder="Jaipur"></textarea>
-        </fieldset>
+        </fieldset><br>
 
         <div style="margin-top: 18px;">
             <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
             <label for="termsAccepted">I certify that all credentials provided are accurate and verified</label>
-        </div>
+        </div><br>
 
         <div>
             <button type="submit">Submit Registration</button>
