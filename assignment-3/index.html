@@ -1,156 +1,77 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Registration Portal</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 650px;
-      margin: 30px auto;
-      padding: 20px;
-      line-height: 1.5;
-      color: #1e293b;
-    }
-    h1 {
-      text-align: center;
-      color: #0f172a;
-      margin-bottom: 24px;
-    }
-    fieldset {
-      border: 1.5px solid #cbd5e1;
-      border-radius: 8px;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-      background: #f8fafc;
-    }
-    legend {
-      font-weight: 700;
-      color: #0f172a;
-      padding: 0 8px;
-    }
-    label {
-      display: block;
-      margin-top: 12px;
-      margin-bottom: 4px;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    input[type="radio"] + label,
-    input[type="checkbox"] + label {
-      display: inline;
-      font-weight: normal;
-      margin-right: 15px;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="number"],
-    input[type="url"],
-    input[type="password"],
-    select,
-    textarea {
-      width: 100%;
-      padding: 8px 12px;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      box-sizing: border-box;
-      font-size: 0.95rem;
-    }
-    input[type="file"] {
-      display: block;
-      margin-top: 6px;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-right: 10px;
-      margin-top: 15px;
-    }
-    button[type="submit"] {
-      background: #0284c7;
-      color: #fff;
-      border: none;
-    }
-    button[type="reset"] {
-      background: #e2e8f0;
-      color: #334155;
-      border: 1px solid #cbd5e1;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
 </head>
 <body>
-  <h1>Student Registration Portal</h1>
-  <form action="#" method="POST">
-    <fieldset>
-      <legend>1. Personal Credentials</legend>
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" placeholder="Enter your name" required>
+    <h1>Student Registration Portal</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>1. Personal Credentials</legend>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required>
 
-      <label for="mobileno">Mobile No.</label>
-      <input type="tel" id="mobileno" name="mobile number" placeholder="99999-99999">
+            <label for="mobileno">Mobile No.</label>
+            <input type="tel" id="mobileno" name="mobile number" placeholder="99999-99999">
 
-      <label for="dob">Date of Birth</label>
-      <input type="date" id="dob" name="dob" required>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
 
-      <label for="gender">Gender</label>
-      <input type="radio" id="gendermale" name="gender" value="male">
-      <label for="gendermale">Male</label>
-      <input type="radio" id="genderfemale" name="gender" value="female">
-      <label for="genderfemale">Female</label>
-    </fieldset>
+            <label for="gender">Gender</label>
+            <input type="radio" id="gendermale" name="gender" value="male">
+            <label for="gendermale">Male</label>
+            <input type="radio" id="genderfemale" name="gender" value="female">
+            <label for="genderfemale">Female</label>
+        </fieldset>
 
-    <fieldset>
-      <legend>2. Academic and Technical Domain</legend>
-      <label for="courseName">Degree Program</label>
-      <select id="courseName" name="courseName" required>
-        <option value="">-- Select Course --</option>
-        <option value="BTech-AI/ML">BTech CSE-(AI/ML)</option>
-        <option value="BTech-CSE">BTech Computer Science</option>
-      </select>
+        <fieldset>
+            <legend>2. Academic and Technical Domain</legend>
+            <label for="courseName">Degree Program</label>
+            <select id="courseName" name="courseName" required>
+                <option value="">-- Select Course --</option>
+                <option value="BTech-AI/ML">BTech CSE-(AI/ML)</option>
+                <option value="BTech-CSE">BTech Computer Science</option>
+            </select>
 
-      <label for="year of study">Current Year</label>
-      <input type="number" id="year of study" name="year of study" min="1" max="4" required>
+            <label for="year of study">Current Year</label>
+            <input type="number" id="year of study" name="year of study" min="1" max="4" required>
 
-      <label>Core Domains</label>
-      <input type="checkbox" id="interests2" name="interests2" value="web">
-      <label for="interests2">Web development</label>
-      <input type="checkbox" id="interest" name="interest" value="ai">
-      <label for="interest">Artificial Intelligence</label>
+            <label>Core Domains</label>
+            <input type="checkbox" id="interests2" name="interests2" value="web">
+            <label for="interests2">Web development</label>
+            <input type="checkbox" id="interest" name="interest" value="ai">
+            <label for="interest">Artificial Intelligence</label>
 
-      <label for="githubProfile">Github Profile</label>
-      <input type="url" id="githubProfile" name="githubProfile" placeholder="https://github.com/armanattrey">
+            <label for="github">Github Profile</label>
+            <input type="url" id="githubProfile" name="githubProfile" placeholder="https://github.com/armanattrey">
 
-      <label for="resumeFile">Upload Resume</label>
-      <input type="file" id="resumeFile" name="resumeFile" accept=".pdf">
-    </fieldset>
+            <label for="resumeFile">Upload Resume</label>
+            <input type="file" id="resumeFile" name="resumeFile" accept=".pdf">
+        </fieldset>
 
-    <fieldset>
-      <legend>3. Security and Location</legend>
-      <label for="accountPassword">Account Password</label>
-      <input type="password" id="accountPassword" name="accountPassword" required minlength="8">
+        <fieldset>
+            <legend>3. Security and Location</legend>
+            <label for="accountPassword">Account Password</label>
+            <input type="password" id="accountPassword" name="accountPassword" required minlength="8">
 
-      <label for="currentAddress">Current Address</label>
-      <textarea id="currentAddress" name="currentAddress" rows="3" cols="40" maxlength="200" placeholder="Jaipur"></textarea>
-    </fieldset>
+            <label for="currentAddress">Current Address</label>
+            <textarea id="currentAddress" name="currentAddress" rows="3" cols="40" maxlength="200" placeholder="Jaipur"></textarea>
+        </fieldset>
 
-    <div style="margin-top: 18px;">
-      <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
-      <label for="termsAccepted">I certify that all credentials provided are accurate and verified</label>
-    </div>
+        <div style="margin-top: 18px;">
+            <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+            <label for="termsAccepted">I certify that all credentials provided are accurate and verified</label>
+        </div>
 
-    <div>
-      <button type="submit">Submit Registration</button>
-      <button type="reset">Reset Form</button>
-    </div>
-  </form>
+        <div>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
 </body>
 </html>
